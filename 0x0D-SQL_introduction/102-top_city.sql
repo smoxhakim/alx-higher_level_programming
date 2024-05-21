@@ -2,12 +2,14 @@
 
 SELECT
     city,
-    value AS temperature,
-    MONTH(date) AS month
+    AVG(value) AS avg_temp
 FROM
     temperatures
 WHERE
     MONTH(date) IN (7, 8)
+GROUP BY
+    city
 ORDER BY
-    temperature DESC
+    avg_temp DESC
 LIMIT 3;
+
