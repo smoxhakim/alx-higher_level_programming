@@ -1,3 +1,3 @@
 -- Lists all tables of a given database
 
-SHOW TABLES;
+SHOW CREATE TABLE `first_table`;
