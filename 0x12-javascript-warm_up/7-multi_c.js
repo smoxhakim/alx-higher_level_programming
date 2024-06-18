@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const args = process.argv;
+const args = parseInt(process.argv);
 let i = 0;
 
 if (!args[2]) {
