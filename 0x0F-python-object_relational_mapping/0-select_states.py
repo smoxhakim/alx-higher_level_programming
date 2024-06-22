@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-#!/usr/bin/python3
 
 """Get all states and display them."""
 
@@ -22,3 +21,4 @@ if __name__ == "__main__":
 
     cursor.close()
     db.close()
+    
