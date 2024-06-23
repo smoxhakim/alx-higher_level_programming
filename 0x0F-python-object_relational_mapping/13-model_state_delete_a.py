@@ -18,4 +18,3 @@ if __name__ == "__main__":
     for object in result:
         session.delete(object)
     session.commit()
-    session.close()
