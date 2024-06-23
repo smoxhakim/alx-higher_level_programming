@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 """Fetch all States"""
+
 if __name__ == "__main__":
     from model_state import Base, State
     from sqlalchemy import create_engine
