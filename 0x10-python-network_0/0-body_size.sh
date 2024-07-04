@@ -1,3 +1,3 @@
 #!/bin/bash
-#cURL displays the size of the body of the response
-curl -sw '%{size_download}\n' -o /dev/null "$1"
+#displays the size of the body of the response
+curl -s  -o /dev/null -w "%{size_download}\n" "$1"
