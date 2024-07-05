@@ -7,6 +7,5 @@ import sys
 if __name__ == "__main__":
     with urllib.request.urlopen(sys.argv[1]) as response:
         ids = response.headers
-
-x_id = ids.get('X-Request-Id')
+        x_id = ids.get('X-Request-Id')
 print(x_id)
