@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Error code"""
 
-#!/usr/bin/python3
 import requests
 import sys
 
