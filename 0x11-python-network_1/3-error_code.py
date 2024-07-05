@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""manage urllib.error.HTTPError"""
 import urllib.request
 import urllib.error
 import sys
