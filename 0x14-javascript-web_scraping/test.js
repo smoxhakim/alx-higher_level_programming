@@ -1,23 +1,11 @@
-const fs = require('fs')
+const request = require('request');
+const fs = require('request')
 
-const file = process.argv[2];
-const fileUpdat = process.argv[3]
-if (!file) {
-  console.error('Please provide a file path as a command-line argument.');
-  process.exit(1);
-}
+const url = process.argv[2];
 
-
-fs.writeFile(file, fileUpdat, 'utf8', (error) => {
-  if (error) {
-    console.log('Error', error)
-  }
-});
-
-fs.readFile(file, 'utf8', (err, data) => {
+request(url, 'utf8', (err, response) => {
   if (err) {
-    console.error('Error reading file:', err);
-    return;
+    console.log('Error:', err)
   }
-  console.log(data);
-});
+  console.log('code: ', response.statusCode)
+})
