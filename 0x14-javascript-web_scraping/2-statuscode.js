@@ -7,7 +7,7 @@ if (!url) {
   process.exit(1);
 }
 
-request(url, 'utf8', (err, response) => {
+request(url, (err, response) => {
   if (err) {
     console.log('Error:', err);
   }
